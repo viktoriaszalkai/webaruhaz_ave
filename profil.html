@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <main class="container-fluid row">
+        <header class="col-md-12"><h1>Webáruház</h1></header>
+            <nav class="navbar navbar-expand-sm bg-light navbar-light col-md-12">
+                <div class="container-fluid">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="index.html">Kezdőlap</a>
+                    </li>
+                   <li class="nav-item">
+                      <a class="nav-link" href="tablazat.html">Mérettáblázat</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="admin.html">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="profil.html">Profilom</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mondja el!</a>
+                      </li>
+                  </ul>
+                </div>
+            </nav>
+        <aside class="col-md-2">
+        <fieldset>
+            <p>Keresési feltételek</p>
+            <form>
+                <label for="fname">A termék neve:</label><br>
+                <input type="text" id="fname" name="fname" style="max-width: 100%;"><br>
+            </form>
+            <div>
+                <h8>Szűrés ár szerint: </h8>
+                <input type="range" min="100" max="10000" value="50" class="slider" id="myRange">
+            </div>
+        </fieldset>
+        </aside>
+        <article class="col-md-8 row">
+            <form action="#" method="get" class= "row" >
+                <fieldset class="col-md-6 ">
+                    <legend>Profil adatok</legend>
+                    <div class="mb-3 mt-3">
+                        <label for="neve" style="width: 120px;">Név:</label>
+                        <input type="text" id="neve" name="nev" size="25">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="email" style="width: 120px;">E-mail cím:</label>
+                        <input type="text" id="email" name="email" size="25">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="datum" style="width: 120px;">Szállítási dátum:</label>
+                        <input type="date" id="datum" name="datum" size="25">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <legend>Szállítási cím:</legend>
+                        <label for="orszag" style="width: 120px;">Ország:</label>
+                        <input type="text" id="orszag" name="orszag" size="25">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="varos" style="width: 120px;">Város:</label>
+                        <input type="text" id="varos" name="varos" size="25">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="iranyitoszam" style="width: 120px;">Irányítószám:</label>
+                        <input type="text" id="iranyitoszam" name="iranyitoszam"size="25">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="utca" style="width: 120px;">Utca, házszám:</label>
+                        <input type="text" id="utca" name="utca" size="25">
+                    </div>
+                    </fieldset>
+                    <fieldset class="col-md-6">
+                        <legend>Szállítás formája</legend>
+                    <div class="mb-3 mt-3">
+                        <input type="radio" id="hazhoz" name="szallitas">
+                        <label for="hazhoz">Házhoz szállítás</label>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <input type="radio" id="csomagpont" name="szallitas">
+                        <label for="csomagpont">Átvétel csomagponton</label>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <input type="radio" id="atvetel" name="szallitas">
+                        <label for="atvetel">Átvétel az üzletben</label>
+                    </div>
+                        <legend>Fizetés formája</legend>
+                    <div class="mb-3 mt-3">
+                        <input type="radio" id="utalas" name="fizetes">
+                        <label for="utalas">Átutalásos fizetés</label>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <input type="radio" id="kartyas" name="fizetes">
+                        <label for="kartyas">Kártyás fizetés</label>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <input type="radio" id="keszpenz" name="fizetes">
+                        <label for="keszpenz">Készpénzes fizetés az üzletben</label>
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-outline-info">Rendelés leadása</button>
+                </fieldset>
+            </form>
+        </article>
+        <aside class="col-md-2">
+            <h2>Kapcsolódó cikkek 1</h2>
+            <ol>
+                <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li class="list-group-item">Pellentesque lacinia nisi fringilla nunc semper, a interdum nunc venenatis.</li>
+                <li class="list-group-item">Vivamus sed elit id justo fringilla congue.</li>
+            </ol>
+            <h2>Kapcsolódó cikkek 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper ornare orci. Cras gravida quam erat, mattis pretium nulla feugiat sit amet. Pellentesque eleifend facilisis ex, et congue augue placerat molestie. Etiam volutpat convallis odio nec vehicula. Praesent sodales urna nec arcu aliquam elementum. Integer egestas eros id dui tempor, at mattis lorem varius. Sed suscipit elit felis, vel bibendum magna gravida et.</p>
+        </aside>
+        <footer class="col-md-12"></footer>
+    </main>
+</body>
+</html>

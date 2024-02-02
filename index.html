@@ -12,7 +12,7 @@
 </head>
 <body>
     <main class="container-fluid row">
-        <header class="col-md-12"></header>
+        <header class="col-md-12"><h1>Webáruház</h1></header>
             <nav class="navbar navbar-expand-sm bg-light navbar-light col-md-12">
                 <div class="container-fluid">
                   <ul class="navbar-nav">
@@ -25,24 +25,32 @@
                     <li class="nav-item">
                       <a class="nav-link" href="admin.html">Admin</a>
                     </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="profil.html">Profilom</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mondja el!</a>
+                      </li>
                   </ul>
                 </div>
             </nav>
         <aside class="col-md-2">
+        <fieldset>
             <p>Keresési feltételek</p>
             <form>
                 <label for="fname">A termék neve:</label><br>
-                <input type="text" id="fname" name="fname"><br>
+                <input type="text" id="fname" name="fname" style="max-width: 100%;"><br>
             </form>
             <div>
                 <h8>Szűrés ár szerint: </h8>
                 <input type="range" min="100" max="10000" value="50" class="slider" id="myRange">
             </div>
+        </fieldset>
         </aside>
-        <article class="col-md-8 row ">
+        <article class="col-md-8 row">
             <div class="card col-md-4" style="padding:0px">
                 <div class="card-header">
-                    <h4 class="card-title text-info">Retro Gamer férfi póló</h4>
+                    <h4 class="card-title text-info">Retro Gamer férfi...</h4>
                 </div>
                 <div class="card-body">
                     <img src="kepek/polo1.jpg" alt="polo1" class="img-thumbnail">
