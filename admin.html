@@ -10,7 +10,7 @@
 </head>
 <body>
     <main class="container-fluid row">
-        <header class="col-md-12"></header>
+        <header class="col-md-12"><h1>Webáruház</h1></header>
             <nav class="navbar navbar-expand-sm bg-light navbar-light col-md-12">
                 <div class="container-fluid">
                   <ul class="navbar-nav">
@@ -26,6 +26,51 @@
                   </ul>
                 </div>
             </nav>
+    
+            <form action="#" method="get" class="row">
+                <fieldset class="col-md-6">
+                    <div class="mb-3 mt-3">
+                        <label for="ID" style="width: 100px">ID: </label>
+                        <input type="text" id="ID" name="ID"">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="keszlet" style="width: 100px">Készlet: </label>
+                        <input type="number" id="keszlet" name="keszlet" >
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="nev" style="width: 100px">Név: </label>
+                        <input type="text" id="nev" name="nev" >
+                    </div>
+                    <div class="mb-3 mt-3">                    
+                        <label for="kep" style="width: 100px">Kép: </label>
+                        <input type="file" id="kep" name="kep">
+                    </div>       
+                </fieldset>
+                <fieldset class="col-md-6">
+                    <div class="mb-3 mt-3">
+                        <label for="meret" style="width: 100px">Méret: </label>
+                        <label for="meret">S </label>
+                        <input type="checkbox" id="meret" name="meret" size="2">
+                        <label for="meret">M </label>
+                        <input type="checkbox" id="meret" name="meret" size="2">
+                        <label for="meret">L </label>
+                        <input type="checkbox" id="meret" name="meret" size="2">
+                        <label for="meret">XL </label>
+                        <input type="checkbox" id="meret" name="meret" size="2">
+                        <label for="meret">XXL </label>
+                        <input type="checkbox" id="meret" name="meret" size="2">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="ar" style="width: 100px">Ár: </label>
+                        <input type="number" id="ar" name="ar" >
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="leiras"style="width: 100px" >Leírás: </label>
+                        <input type="text" id="leiras" name="leiras">
+                    </div>
+                    <input type="submit" class="btn btn-info" id="submit" value="Küldés">
+                </fieldset>
+            </form>
     <div class="container mt-3">     
     <table class="table table-bordered table-hover">
         <thead class="table-info">
@@ -34,7 +79,7 @@
             <th>Név</th>
             <th>Kép</th>
             <th>Méret</th>
-            <th>Ár</th>
+            <th>Ár (Ft)</th>
             <th>Leírás</th>
             <th>Készlet db</th>
         </tr>
@@ -45,7 +90,7 @@
             <td>Retro Gamer férfi póló</td>
             <td><img src="kepek/polo1.jpg" alt="polo" width="40px"></td>
             <td>S</td>
-            <td>6990 Ft</td>
+            <td>6990</td>
             <td>A pólódat kifordítva 30 fokon, szárítógép használata nélkül mosd ki, így vigyázva a 100% pamut szövet és a nyomat minőségére...</td>
             <td>60</td>
         </tr>
@@ -54,7 +99,7 @@
             <td>Retro Gamer férfi póló</td>
             <td><img src="kepek/polo1.jpg" alt="polo" width="40px"></td>
             <td>M</td>
-            <td>6990 Ft</td>
+            <td>6990</td>
             <td>A pólódat kifordítva 30 fokon, szárítógép használata nélkül mosd ki, így vigyázva a 100% pamut szövet és a nyomat minőségére...</td>
             <td>54</td>
         </tr>
@@ -63,7 +108,7 @@
             <td>Retro Gamer férfi póló</td>
             <td><img src="kepek/polo1.jpg" alt="polo" width="40px"></td>
             <td>L</td>
-            <td>6990 Ft</td>
+            <td>6990</td>
             <td>A pólódat kifordítva 30 fokon, szárítógép használata nélkül mosd ki, így vigyázva a 100% pamut szövet és a nyomat minőségére...</td>
             <td>71</td>
         </tr>
@@ -72,7 +117,7 @@
             <td>Retro Gamer férfi póló</td>
             <td><img src="kepek/polo1.jpg" alt="polo" width="40px"></td>
             <td>XL</td>
-            <td>6990 Ft</td>
+            <td>6990</td>
             <td>A pólódat kifordítva 30 fokon, szárítógép használata nélkül mosd ki, így vigyázva a 100% pamut szövet és a nyomat minőségére...</td>
             <td>46</td>
         </tr>
@@ -81,7 +126,7 @@
             <td>Retro Gamer férfi póló</td>
             <td><img src="kepek/polo1.jpg" alt="polo" width="40px"></td>
             <td>XXL</td>
-            <td>6990 Ft</td>
+            <td>6990</td>
             <td>A pólódat kifordítva 30 fokon, szárítógép használata nélkül mosd ki, így vigyázva a 100% pamut szövet és a nyomat minőségére...</td>
             <td>76</td>
         </tr>
