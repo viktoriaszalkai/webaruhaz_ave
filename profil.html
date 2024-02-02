@@ -48,7 +48,70 @@
         </fieldset>
         </aside>
         <article class="col-md-8 row">
-            
+            <form action="#" method="get" class= "row" >
+                <fieldset class="col-md-6 ">
+                    <legend>Profil adatok</legend>
+                    <div class="mb-3 mt-3">
+                        <label for="neve" style="width: 120px;">Név:</label>
+                        <input type="text" id="neve" name="nev" size="25">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="email" style="width: 120px;">E-mail cím:</label>
+                        <input type="text" id="email" name="email" size="25">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="datum" style="width: 120px;">Szállítási dátum:</label>
+                        <input type="date" id="datum" name="datum" size="25">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <legend>Szállítási cím:</legend>
+                        <label for="orszag" style="width: 120px;">Ország:</label>
+                        <input type="text" id="orszag" name="orszag" size="25">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="varos" style="width: 120px;">Város:</label>
+                        <input type="text" id="varos" name="varos" size="25">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="iranyitoszam" style="width: 120px;">Irányítószám:</label>
+                        <input type="text" id="iranyitoszam" name="iranyitoszam"size="25">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="utca" style="width: 120px;">Utca, házszám:</label>
+                        <input type="text" id="utca" name="utca" size="25">
+                    </div>
+                    </fieldset>
+                    <fieldset class="col-md-6">
+                        <legend>Szállítás formája</legend>
+                    <div class="mb-3 mt-3">
+                        <input type="radio" id="hazhoz" name="szallitas">
+                        <label for="hazhoz">Házhoz szállítás</label>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <input type="radio" id="csomagpont" name="szallitas">
+                        <label for="csomagpont">Átvétel csomagponton</label>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <input type="radio" id="atvetel" name="szallitas">
+                        <label for="atvetel">Átvétel az üzletben</label>
+                    </div>
+                        <legend>Fizetés formája</legend>
+                    <div class="mb-3 mt-3">
+                        <input type="radio" id="utalas" name="fizetes">
+                        <label for="utalas">Átutalásos fizetés</label>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <input type="radio" id="kartyas" name="fizetes">
+                        <label for="kartyas">Kártyás fizetés</label>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <input type="radio" id="keszpenz" name="fizetes">
+                        <label for="keszpenz">Készpénzes fizetés az üzletben</label>
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-outline-info">Rendelés leadása</button>
+                </fieldset>
+            </form>
         </article>
         <aside class="col-md-2">
             <h2>Kapcsolódó cikkek 1</h2>
